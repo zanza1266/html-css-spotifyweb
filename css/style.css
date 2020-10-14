@@ -166,7 +166,7 @@ main {
  left: 200px;
  top: 0px;
  background-color: #141922;
- overflow: scroll;
+ overflow: auto;
 }
 
 .top-bar {
@@ -192,8 +192,122 @@ main {
 
 }
 
-.content h1 {
+.content .content-nav {
   padding-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.content .content-nav ul li {
+  display: inline-block;
+  color: #7d7f84;
+  font-size: 12px;
+}
+
+.content .content-nav ul li .green-bar {
+  height: 2px;
+  width: 30px;
+  background-color: #adff2f;
+  margin: auto;
+}
+
+.content .content-nav ul li:not(:last-child) {
+  margin-right: 10px;
+}
+
+.content-main {
+  padding: 20px;
+}
+
+.content-main h2 {
+  margin-top: 40px;
+  color: white;
+}
+
+.content-main p {
+  font-size: 12px;
+  color: #a3a3a3;
+  margin-top: 10px;
+}
+
+
+.recent-played {
+  display: flex;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.recent-item {
+  margin: 0px 10px;
+  width: 170px;
+}
+
+.recent-item img {
+  width: 100%;
+  display: block;
+}
+
+.recent-item h4 {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 15px;
+  color: white;
+}
+
+.recent-item p {
+  text-align: center;
+  margin-top: 5px;
+  font-size: 12px;
+  color: #a3a3a3;
+}
+
+
+.created-for {
+  display: flex;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.createdfor-item {
+  margin: 0px 10px;
+  width: 170px;
+}
+
+.createdfor-item img {
+  width: 100%;
+  display: block;
+}
+
+.createdfor-item h4 {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 15px;
+  color: white;
+}
+
+
+.popular {
+  display: flex;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.popular-item {
+  margin: 0px 10px;
+  width: 170px;
+}
+
+.popular-item img {
+  display: block;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.popular-item h4 {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 15px;
+  color: white;
 }
 
 /* player */
