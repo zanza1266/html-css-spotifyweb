@@ -170,13 +170,26 @@ main {
 }
 
 .top-bar {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
   width: calc(100vw - 200px);
   height: 80px;
   top: 0;
   right: 0;
-  background-color: black;
-  opacity: .5;
+  background-color: rgba(0, 0, 0, 0.5);
   position: fixed;
+  padding-right: 30px;
+}
+
+.top-bar button {
+  height: 50px;
+  width: 200px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: 1px solid white;
+  border-radius: 50px;
+
 }
 
 .content h1 {
@@ -186,9 +199,88 @@ main {
 /* player */
 
 .player {
+  display: flex;
+  justify-content: space-between;
   width: 100vw;
   height: 80px;
   position: absolute;
   bottom: 0;
   background-color: #282828;
+}
+
+.left-player {
+  display: flex;
+  align-items: center;
+  width: 230px;
+  color: #5a5a5a;
+}
+
+.left-player img {
+  height: 50px;
+  margin: 0px 10px 0px 10px;
+}
+
+.track_artist {
+  margin-right: 20px;
+}
+
+.track_artist h5 {
+  font-size: 10px;
+  color: white;
+}
+
+.track_artist p {
+  font-size: 10px;
+}
+
+.left-player i {
+  margin-left: 10px;
+}
+
+.middle-player {
+  width: 450px;
+}
+
+.midplayer-top {
+  height: 60%;
+}
+
+.midplayer-top, .midplayer-bottom {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.midplayer-top i {
+  margin: 0px 15px;
+  color: white;
+}
+
+.midplayer-bottom .play_bar {
+  width: 70%;
+  height: 4px;
+  border-radius: 4px;
+  background-color: #5a5a5a;
+  margin: 0px 10px;
+}
+
+.midplayer-bottom span {
+  color: white;
+  font-size: 12px;
+}
+
+.right-player {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 230px;
+  color: white;
+}
+
+.volume_bar {
+  width: 120px;
+  height: 4px;
+  border-radius: 4px;
+  background-color: #5a5a5a;
 }
