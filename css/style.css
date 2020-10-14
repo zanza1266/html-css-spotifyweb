@@ -159,6 +159,7 @@ main {
 
 /* content */
 
+
 .content {
  height: calc(100vh - 80px);
  width: calc(100% - 200px);
@@ -183,13 +184,18 @@ main {
 }
 
 .top-bar button {
-  height: 50px;
-  width: 200px;
+  height: 40px;
+  width: 180px;
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   border: 1px solid white;
   border-radius: 50px;
+  transition: all .2s;
+}
 
+.top-bar button:hover {
+  height: 50px;
+  width: 200px;
 }
 
 .content .content-nav {
@@ -231,20 +237,33 @@ main {
 }
 
 
+.play_hover {
+  color: white;
+  position: absolute;
+  left: 85px;
+  top: 85px;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: 0.2s;
+}
+
 .recent-played {
   display: flex;
   width: 100%;
+  flex-wrap: wrap;
   margin-top: 30px;
 }
 
 .recent-item {
   margin: 0px 10px;
   width: 170px;
+  position: relative;
 }
 
 .recent-item img {
   width: 100%;
   display: block;
+  transition: 0.2s;
 }
 
 .recent-item h4 {
@@ -261,6 +280,14 @@ main {
   color: #a3a3a3;
 }
 
+.recent-item:hover .play_hover {
+  opacity: 1;
+}
+
+.recent-item:hover  img {
+  opacity: 0.5;
+}
+
 
 .created-for {
   display: flex;
@@ -271,11 +298,13 @@ main {
 .createdfor-item {
   margin: 0px 10px;
   width: 170px;
+  position: relative;
 }
 
 .createdfor-item img {
   width: 100%;
   display: block;
+  transition: 0.2s;
 }
 
 .createdfor-item h4 {
@@ -283,6 +312,14 @@ main {
   margin-top: 10px;
   font-size: 15px;
   color: white;
+}
+
+.createdfor-item:hover .play_hover {
+  opacity: 1;
+}
+
+.createdfor-item:hover  img {
+  opacity: 0.5;
 }
 
 
@@ -295,12 +332,14 @@ main {
 .popular-item {
   margin: 0px 10px;
   width: 170px;
+  position: relative;
 }
 
 .popular-item img {
   display: block;
   width: 100%;
   border-radius: 50%;
+  transition: 0.2s;
 }
 
 .popular-item h4 {
@@ -308,6 +347,14 @@ main {
   margin-top: 10px;
   font-size: 15px;
   color: white;
+}
+
+.popular-item:hover .play_hover {
+  opacity: 1;
+}
+
+.popular-item:hover  img {
+  opacity: 0.5;
 }
 
 /* player */
