@@ -4,19 +4,157 @@
   box-sizing: border-box;
 }
 
+* a {
+  text-decoration: none;
+  color: #a3a3a3;
+}
+
+main {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+/* classi helper */
+
+.white {
+  color: white;
+}
+
 /* side nav */
 
 .side-nav {
   width: 200px;
-  height: calc(100vh - 80px);
+  height: calc(100% - 80px);
   overflow: hidden;
   background-color: black;
+  color: #a3a3a3;
 }
 
-.side-nav img {
-  width: 170px;
+.sidenav-up {
+  min-height: 280px;
+  width: 100%;
+  height: calc(100% - 90px);
+}
+
+.logo {
+  height: 80px;
+}
+
+.side-nav .logo img {
+  width: 130px;
   margin-left: 15px;
   margin-top: 15px;
+}
+
+.top-side-nav {
+  height: 100px;
+}
+
+.top-side-nav li {
+  list-style: none;
+  height: 30px;
+  line-height: 30px;
+}
+
+.top-side-nav ul li:hover {
+  border-left: 4px solid #adff2f;
+}
+
+.top-side-nav ul li a {
+  height: 30px;
+  display: inline-block;
+  position: relative;
+}
+
+.top-side-nav ul img {
+  height: 20px;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translate(0, -50%);
+}
+
+.top-side-nav ul span {
+  margin-left: 45px;
+  font-size: 12px;
+}
+
+.bottom-side-nav {
+  height: 100px;
+  width: 100%;
+}
+
+.bottom-side-nav h4 {
+  padding-left: 15px;
+  font-size: 15px;
+  color: white;
+}
+
+.playlist {
+  padding: 15px 0px 15px 15px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.playlist i {
+  margin-right: 10px;
+}
+
+.playlist-items {
+  overflow-y: auto;
+  height: calc(100% - 280px);
+}
+
+.side-nav .playlist-items ul li {
+  list-style: none;
+  padding: 10px 0px 10px 15px;
+  font-size: 10px;
+}
+
+.sidenav-down {
+  height: 90px;
+  width: 100%;
+  background-color: black;
+  padding: 5px 15px 5px 15px;
+  font-size: 12px;
+}
+
+.install-app {
+  display: flex;
+  align-items: center;
+  height: 35px;
+  width: 100%;
+  border-bottom: 1px solid grey;
+}
+
+.install-app span {
+  margin-left: 10px;
+  color: white;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  height: 45px;
+  width: 100%;
+  line-height: 45px;
+}
+
+.profile-img {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: #808080;
+  background-image: url("../img/profile.svg");
+  background-position: center;
+  margin-right: 10px;
 }
 
 /* content */
@@ -29,19 +167,20 @@
  top: 0px;
  background-color: #141922;
  overflow: scroll;
- padding-top: 100px;
 }
-
-/* top bar */
 
 .top-bar {
   width: calc(100vw - 200px);
   height: 80px;
-  position: absolute;
   top: 0;
   right: 0;
   background-color: black;
   opacity: .5;
+  position: fixed;
+}
+
+.content h1 {
+  padding-top: 100px;
 }
 
 /* player */
