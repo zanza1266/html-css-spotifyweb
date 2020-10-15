@@ -18,7 +18,7 @@
           </div>
           <div class="top-side-nav">
             <ul>
-              <li> <a href="#"><img src="img/home.svg" alt=""> <span>Home</span> </a></li>
+              <li> <a href="#"><img src="img/home.svg" alt=""> <span class="white">Home</span> </a></li>
               <li> <a href="#"><img src="img/search.svg" alt=""> <span>Cerca</span></a></li>
               <li> <a href="#"><img src="img/libreria.svg" alt=""> <span>La tua libreria</span></a></li>
             </ul>
@@ -26,25 +26,31 @@
           <div class="bottom-side-nav">
             <h4>Playlist</h4>
             <div class="playlist">
-              <div><i class="fa fa-plus-square fa-2x" aria-hidden="true"></i></div>
-              <div>Crea playlist</div>
+              <div class="playlist-content_hover">
+                <i class="fa fa-plus-square fa-2x" aria-hidden="true"></i>
+                <span>Crea playlist</span>
+              </div>
             </div>
           </div>
           <div class="playlist-items">
             <ul>
-              <li>Nome Playlist</li>
-              <li>Nome Playlist</li>
-              <li>Nome Playlist</li>
-              <li>Nome Playlist</li>
-              <li>Nome Playlist</li>
-              <li>Nome Playlist</li>
+              <li><span>Nome Playlist</span></li>
+              <li><span>Nome Playlist</span></li>
+              <li><span>Nome Playlist</span></li>
+              <li><span>Nome Playlist</span></li>
+              <li><span>Nome Playlist</span></li>
+              <li><span>Nome Playlist</span></li>
+              <li><span>Nome Playlist</span></li>
+              <li><span>Nome Playlist</span></li>
             </ul>
           </div>
         </div>
         <div class="sidenav-down">
           <div class="install-app">
-            <i class="fa fa-arrow-circle-o-down" aria-hidden="true"></i>
-            <span>Installa App</span>
+            <div class="install-app_hover">
+              <i class="fa fa-arrow-circle-o-down" aria-hidden="true"></i>
+              <span>Installa App</span>
+            </div>
           </div>
           <div class="user">
             <div class="profile-img">
@@ -52,6 +58,16 @@
             </div>
             <span>Gianluca</span>
           </div>
+        </div>
+        <div class="xs-sidenav-up">
+          <img src="img/favicon.ico" alt="logo xs">
+          <img src="img/home.svg" alt="home">
+          <img src="img/search.svg" alt="search">
+          <img src="img/libreria.svg" alt="libreria">
+        </div>
+        <div class="xs-sidenav-down">
+          <i class="fa fa-arrow-circle-o-down" aria-hidden="true"></i>
+          <div class="profile-img"></div>
         </div>
       </section>
       <section class="content">
@@ -61,14 +77,14 @@
         <div class="content-nav">
           <ul>
             <li>
-              IN EVIDENZA
+              <span>IN EVIDENZA</span>
               <div class="green-bar"></div>
             </li>
-            <li>PODCAST</li>
-            <li>CLASSIFICHE</li>
-            <li>GENERI E MOOD</li>
-            <li>NUOVE USCITE</li>
-            <li>SCOPRI</li>
+            <li><span>PODCAST</span></li>
+            <li><span>CLASSIFICHE</span></li>
+            <li><span>GENERI E MOOD</span></li>
+            <li><span>NUOVE USCITE</span></li>
+            <li><span>SCOPRI</span></li>
           </ul>
         </div>
         <div class="content-main">
@@ -157,7 +173,9 @@
           <div class="midplayer-top">
             <i class="fa fa-random" aria-hidden="true"></i>
             <i class="fa fa-step-backward" aria-hidden="true"></i>
-            <i class="fa fa-play-circle-o fa-2x" aria-hidden="true"></i>
+            <div class="play-circle">
+              <i class="fa fa-play" aria-hidden="true"></i>
+            </div>
             <i class="fa fa-step-forward" aria-hidden="true"></i>
             <i class="fa fa-repeat" aria-hidden="true"></i>
           </div>
