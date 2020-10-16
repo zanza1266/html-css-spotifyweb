@@ -115,6 +115,10 @@ main {
   color: white;
 }
 
+.playlist-content_hover:hover a {
+  color: white;
+}
+
 .playlist a {
   margin-left: 10px;
   line-height: 28px;
