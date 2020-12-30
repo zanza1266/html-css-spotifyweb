@@ -1,1 +1,1 @@
-document.getElementById('translation').innerHTML = 'Riprodotti di recente';
+  window.document.getElementById("translation").innerHTML = "YOU CLICKED ME!";
